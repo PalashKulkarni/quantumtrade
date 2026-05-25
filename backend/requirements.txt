@@ -1,0 +1,42 @@
+# ── Web framework ──────────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.12
+
+# ── Database ───────────────────────────────────────────────────
+sqlalchemy>=2.0.36
+alembic>=1.14.0
+aiosqlite>=0.20.0           # SQLite async driver (dev/tests — no extra setup)
+asyncpg>=0.30.0             # PostgreSQL async driver (optional, production)
+
+# ── Validation & settings ──────────────────────────────────────
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+email-validator>=2.1.0      # Required by pydantic EmailStr
+
+# ── Auth ───────────────────────────────────────────────────────
+python-jose[cryptography]>=3.3.0
+bcrypt>=4.2.0
+passlib[bcrypt]>=1.7.4
+
+# ── AI copilot (optional — app boots without it) ───────────────
+anthropic>=0.40.0
+
+# ── Market data ────────────────────────────────────────────────
+yfinance>=0.2.50
+pandas>=2.2.0
+numpy>=1.26.0
+tenacity>=9.0.0
+httpx>=0.28.0               # Async HTTP (news service)
+
+# ── Cache ──────────────────────────────────────────────────────
+redis[asyncio]>=5.2.0       # Optional — app uses in-memory fallback if unavailable
+
+# ── Background tasks (optional) ───────────────────────────────
+# celery>=5.4.0             # Uncomment to enable background workers
+
+# ── Testing ────────────────────────────────────────────────────
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+httpx>=0.28.0
+aiosqlite>=0.20.0

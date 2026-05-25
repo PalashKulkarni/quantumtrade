@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS custom properties ────────────────────────────────── */
+:root {
+  color-scheme: dark;
+}
+
+/* ─── Base body ─────────────────────────────────────────────── */
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(61, 219, 217, 0.07), transparent 28%),
+    linear-gradient(135deg, #061016 0%, #0b1118 48%, #11130f 100%);
+  color: #e6f6f8;
+  font-family: "Inter", Geist, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Glass card ─────────────────────────────────────────────── */
+.glass {
+  border: 1px solid rgba(132, 170, 180, 0.18);
+  background: rgba(13, 24, 32, 0.82);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* ─── Grid backgrounds ───────────────────────────────────────── */
+.subtle-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.neural-grid {
+  background:
+    radial-gradient(circle at center, rgba(61, 219, 217, 0.18), transparent 34%),
+    linear-gradient(rgba(61, 219, 217, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(61, 219, 217, 0.07) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px, 32px 32px;
+}
+
+/* ─── Top bar ────────────────────────────────────────────────── */
+.terminal-topbar {
+  background:
+    linear-gradient(90deg, rgba(61, 219, 217, 0.07), transparent 40%),
+    rgba(0, 0, 0, 0.18);
+}
+
+/* ─── Tailwind colour utilities not auto-generated ───────────── */
+/* These supplement the tailwind.config.ts safelist */
+.text-cyan    { color: #3ddbda; }
+.text-success { color: #59d38c; }
+.text-danger  { color: #ff647c; }
+.text-warning { color: #f59e0b; }
+.text-amber   { color: #f59e0b; }
+
+.border-line  { border-color: rgba(132, 170, 180, 0.14); }
+.border-cyan  { border-color: #3ddbda; }
+
+/* ─── Command palette group heading ──────────────────────────── */
+.command-group [cmdk-group-heading] {
+  padding: 10px 12px 6px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6f8b92;
+}
+
+/* ─── Scrollbars ──────────────────────────────────────────────── */
+::-webkit-scrollbar          { width: 4px; height: 4px; }
+::-webkit-scrollbar-track    { background: transparent; }
+::-webkit-scrollbar-thumb    { background: rgba(255,255,255,0.12); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.22); }
+
+/* ─── Text selection ─────────────────────────────────────────── */
+::selection { background: rgba(61, 219, 217, 0.28); }
+
+/* ─── Range slider ───────────────────────────────────────────── */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.1);
+  outline: none;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #3ddbda;
+  cursor: pointer;
+  border: 2px solid rgba(255,255,255,0.1);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #3ddbda;
+  cursor: pointer;
+  border: 2px solid rgba(255,255,255,0.1);
+}
+
+/* ─── Markdown prose overrides (AI chat) ─────────────────────── */
+.prose-invert a { color: #3ddbda; }
+.prose-invert strong { color: #f1f5f9; }
+.prose-invert code {
+  color: #3ddbda;
+  background: rgba(61,219,217,0.1);
+  padding: 0.1em 0.35em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+.prose-invert blockquote {
+  border-left: 3px solid #f59e0b;
+  background: rgba(245, 158, 11, 0.06);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  color: #fbbf24;
+  margin-left: 0;
+}
+.prose-invert h1,
+.prose-invert h2,
+.prose-invert h3 { color: #f1f5f9; }
+.prose-invert ul { padding-left: 1.25rem; }
+.prose-invert li { color: #cbd5e1; }
+
+/* ─── Focus rings ────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid rgba(61, 219, 217, 0.5);
+  outline-offset: 2px;
+}
+
+/* ─── Recharts tooltip z-index ────────────────────────────────── */
+.recharts-tooltip-wrapper { z-index: 50 !important; }
+
+/* ─── Select element dark styling ────────────────────────────── */
+select option {
+  background: #0d1820;
+  color: #e2e8f0;
+}

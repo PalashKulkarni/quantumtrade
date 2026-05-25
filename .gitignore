@@ -1,0 +1,114 @@
+# =========================
+# Python
+# =========================
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Type checking
+.mypy_cache/
+.pyre/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.local
+.env.*.local
+
+# Keep example env
+!.env.example
+
+# =========================
+# Node / Frontend
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Frontend build outputs
+frontend/dist/
+frontend/build/
+.next/
+out/
+
+# =========================
+# Database
+# =========================
+*.db
+*.sqlite3
+*.sqlite
+quantumtrade
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Docker
+# =========================
+docker-data/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Cache
+# =========================
+.cache/
+.pytest_cache/
+ruff_cache/
+
+# =========================
+# ML / Data files
+# =========================
+*.h5
+*.pt
+*.pth
+*.onnx
+datasets/
+data/
+
+# =========================
+# Alembic
+# =========================
+alembic/versions/__pycache__/

@@ -1,0 +1,2 @@
+"""QuantumTrade AI backend package."""
+
