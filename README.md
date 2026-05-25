@@ -28,8 +28,8 @@ Built for the terminal. Runs in your browser.
 | Service | Link |
 |--------|------|
 | 🖥️ Frontend Dashboard | https://quantumtrade2.vercel.app/ |
-| ⚙️ Backend API | https://your-backend-url.com |
-| 📄 Swagger Docs | https://your-backend-url.com/docs |
+| ⚙️ Backend API | https://quantumtrade-backend.onrender.com |
+| 📄 Swagger Docs | https://quantumtrade-backend.onrender.com/docs |
 
 > 💡 Fully deployed version of QuantumTrade AI with live market simulation + AI copilot enabled.
 
