@@ -23,6 +23,18 @@ Built for the terminal. Runs in your browser.
 
 ---
 
+## 🚀 Live Demo
+
+| Service | Link |
+|--------|------|
+| 🖥️ Frontend Dashboard | https://quantumtrade2.vercel.app/ |
+| ⚙️ Backend API | https://your-backend-url.com |
+| 📄 Swagger Docs | https://your-backend-url.com/docs |
+
+> 💡 Fully deployed version of QuantumTrade AI with live market simulation + AI copilot enabled.
+
+---
+
 ## What is this?
 
 QuantumTrade AI is a full-stack, production-grade trading intelligence platform that brings institutional-level tooling to individual investors. It combines a six-agent AI ensemble, a live market data pipeline, a quantitative backtesting engine, a portfolio risk suite, and a conversational AI copilot — all running locally, instantly, with zero setup friction.
