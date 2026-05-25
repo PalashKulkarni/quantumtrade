@@ -26,8 +26,7 @@ export function MarketChart({
 
   useEffect(() => {
     if (!ref.current || bars.length === 0) return;
-    let chart: IChartApi | undefined;
-    chart = createChart(ref.current, {
+    const chart = createChart(ref.current, {
       height: fullscreen ? 620 : 430,
       layout: { background: { type: ColorType.Solid, color: "transparent" }, textColor: "#a8c7cf" },
       grid: { vertLines: { color: "rgba(255,255,255,0.04)" }, horzLines: { color: "rgba(255,255,255,0.04)" } },
