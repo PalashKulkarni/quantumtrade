@@ -95,7 +95,6 @@ temp/
 # Cache
 # =========================
 .cache/
-.pytest_cache/
 ruff_cache/
 
 # =========================
@@ -105,8 +104,13 @@ ruff_cache/
 *.pt
 *.pth
 *.onnx
+
+# Ignore datasets generally
 datasets/
 data/
+
+# BUT keep demo CSV
+!sample-portfolio.csv
 
 # =========================
 # Alembic
