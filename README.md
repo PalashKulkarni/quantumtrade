@@ -278,19 +278,19 @@ All endpoints are available at `http://localhost:8000/docs` with no authenticati
 
 ```bash
 # Set in Vercel dashboard:
-NEXT_PUBLIC_API_URL=https://your-backend.railway.app
+NEXT_PUBLIC_API_URL=https://your-backend.onrender.com
 
 vercel --prod
 ```
 
-### Backend → Railway
+### Backend → Render
 
 ```bash
-# Railway auto-detects nixpacks.toml
+# Render auto-detects nixpacks.toml
 # Set environment variable:
 ALLOWED_ORIGINS=https://your-app.vercel.app
 
-# Start command (already in railway.json):
+# Start command (already in render.json):
 uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
 ```
 
