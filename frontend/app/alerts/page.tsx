@@ -60,7 +60,10 @@ export default function AlertsPage() {
         body: JSON.stringify({ symbol, condition, target_price: +targetPrice }),
       });
       if (!res.ok) throw new Error((await res.json()).detail);
-      setAlerts(prev => [await res.clone().json(), ...prev]);
+
+      const newAlert = await res.clone().json();
+      setAlerts(prev => [newAlert, ...prev]);
+
       setTargetPrice("");
     } catch (e) {
       setFormError(e instanceof Error ? e.message : "Failed to create");
